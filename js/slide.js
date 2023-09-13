@@ -4,32 +4,24 @@
     //메인 슬라이드 이전 버튼 클릭 시
     $('.prev').click(function () {
 
-        $('.slide>.sd:last').prependTo('.slide').css({"display":"block",'flex-grow':'0','flex-basis':'0px'},1000);
+        $('.slide>.sd:last').prependTo('.slide').css({"display":"block",'flex-grow':'0','flex-basis':'0px'},500);
         $('.slide>.sd:first').stop().animate({'flex-grow':'1','flex-basis':'0'},"linear");
-        $('.sd').eq(1).stop().animate({'flex-grow':'0','flex-basis':'48px'});
-        $('.sd').eq(2).stop().animate({'flex-grow':'0','flex-basis':'48px'},"slow");   
-        $('.sd').eq(3).stop().animate({'flex-grow':'0','flex-basis':'0'},"slow", function(){
-            $('.sd').eq(3).css({ 'display': 'none' }).animate({ 'flex-grow': '0','flex-basis':'0'});
-        });   
-        
-        // $('.sd').eq(3).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(4).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(5).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(6).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(7).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(8).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(9).css({'flex-grow':'0','flex-basis':'0'});
-        // $('.sd').eq(10).css({'flex-grow':'0','flex-basis':'0'});
+        $('.sd').eq(1).animate({'flex-grow':'0','flex-basis':'48px'},"slow");
+        $('.sd').eq(2).animate({'flex-grow':'0','flex-basis':'48px'},"slow");  
+        $('.sd').eq(3).animate({'flex-grow':'0','flex-basis':'0'},"slow", function(){ 
+       
+            $('.sd').eq(3).css({ 'display': 'none' },"slow");
+        });      
 
         ////메인 타이틀 박스 fade in
-        $('.bg_op').eq(0).css("opacity","0.9").fadeIn(400);
-        $('.bg_op').eq(1).css("opacity","0").fadeOut(400);
-        $('.bg_op').eq(2).css("opacity","0").fadeOut(400);
+        $('.bg_op>.title').eq(0).css("opacity","0.9").fadeIn(400);
+        $('.bg_op>.title').eq(1).css("opacity","0").fadeOut(400);
+        $('.bg_op>.title').eq(2).css("opacity","0").fadeOut(400);
     });
 
      //메인 슬라이드 다음 버튼 클릭 시
      function slide() {
-         console.log('sd')
+        //  console.log('sd')
 
          $('.slide>.sd:first').stop().animate({ 'flex-grow': '0', 'flex-basis': '0' }, 500);
          $('.sd').eq(3).css("display", "block").stop().animate({ 'flex-basis': '48px' }, 500);
@@ -40,10 +32,10 @@
              $('.sd').eq(-1).css({ 'display': 'none' });
 
              //메인 타이틀 박스 fade in
-             $('.bg_op').eq(0).css("opacity", "0.9").fadeIn(400);
-             $('.bg_op').eq(1).css("opacity","0").fadeOut(400);
-             $('.bg_op').eq(2).css("opacity","0").fadeOut(400);
-             $('.bg_op').eq(3).css("opacity","0").fadeOut(400);
+             $('.bg_op>.title').eq(0).css("opacity", "0.9").fadeIn(400);
+             $('.bg_op>.title').eq(1).css("opacity","0").fadeOut(400);
+             $('.bg_op>.title').eq(2).css("opacity","0").fadeOut(400);
+             $('.bg_op>.title').eq(3).css("opacity","0").fadeOut(400);
          });
 
      }
@@ -52,7 +44,7 @@
     $('.next').click(function(){
         slide()
     });
-    // setInterval(slide,6000);
+    setInterval(slide,6000);
 
 
     //today_slide
@@ -149,7 +141,13 @@ $(function(){
    
 });
 
- 
 
+
+$(function () {
+    $('.up').on('click',function (e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, 500);
+    });
+});
     
  
