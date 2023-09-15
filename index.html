@@ -48,7 +48,7 @@
                 <div class="ct_top">
 
                     <div class="logo">
-                        <a href="#"><img src="img/logo.png" alt=""></a>
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
                     </div>
 
 
@@ -144,12 +144,12 @@
                         <div class="bg_op bg3">
                             <div class="title">
                                 <div class="tag2">
-                                    <p>50%할인 / 대여</p>
+                                    <p>ONLY</p>
                                 </div>
-                                <p>일상에<br>
-                                    이야기가 닿으면?!
+                                <p>십오야 쿠폰&포인트 <br> 100% 드림!
+                                   
                                 </p>
-                                <h4>황금가지 국내 소설 기획전</h4>
+                                <h4>이벤트 응모하고 보너스 포인트도 받아가세요!</h4>
 
                                 <p class="num">3/10</p>
                             </div>
@@ -163,12 +163,12 @@
                         <div class="bg_op bg4">
                             <div class="title">
                                 <div class="tag2">
-                                    <p>NEW / 10%할인</p>
+                                    <p>77%할인 / 세트</p>
                                 </div>
-                                <p>무라카미 하루키 <br>
-                                    6년만의 신작 드디어 출간!
+                                <p>대국민 독서지원 <br>
+                                    iPad 77% SALE
                                 </p>
-                                <h4>[도시와 그 불확실한 벽] 출간 기념 이벤트</h4>
+                                <h4>이번엔 만화책도 지원합니다!</h4>
 
                                 <p class="num">4/10</p>
                             </div>
@@ -240,13 +240,13 @@
                         <div class="bg_op bg8">
                             <div class="title">
                                 <div class="tag2">
-                                    <p>오늘마감</p>
+                                    <p>ORICINAL / 대여</p>
 
                                 </div>
-                                <p>혜택도 완전판 <br>
-                                    완전 5,000포인트!
+                                <p>[주의!] <br>
+                                    미래가 보이는 것 보다 가까이 있음
                                 </p>
-                                <h4>완전판 앱결제시 전원 증정</h4>
+                                <h4>9월 우주라이크소설: 현실공감 SF특집</h4>
 
                                 <p class="num">8/10</p>
                             </div>
@@ -2164,8 +2164,8 @@
 
                         </div>
                         <div class="title">
-                            <p> 하루키적 상상력의 모든 것이
-                                담긴 결정적 세계!</p>
+                            <p> 여름 밤 괴랄하고 사랑스러운
+                                호러 청춘 로맨스</p>
                         </div>
                     </div>
 
@@ -2174,7 +2174,9 @@
 
                         </div>
                         <div class="title">
-                            <p>“어느 날, 딸이 달로 사라졌다!”</p>
+                            <p>서글픈 동화를 닮은 재난이
+                                속도감 있게 이어진다.
+                            </p>
                         </div>
                     </div>
 
@@ -2192,7 +2194,7 @@
 
                         </div>
                         <div class="title">
-                            <p>시대적 흐름에 올라타는 자가 미래를 이끈다!</p>
+                            <p>뱀파이어와 SF 세계관이 만난 환상의 대작!</p>
                         </div>
                     </div>
 
@@ -2201,7 +2203,7 @@
 
                         </div>
                         <div class="title">
-                            <p>애덤 그랜트·힐러리 클린턴 추천, 올해 최고의 화제작</p>
+                            <p>그들이 문을 두드린 순간 우리의 악몽이 시작되었다.</p>
                         </div>
                     </div>
 
@@ -2210,7 +2212,7 @@
 
                         </div>
                         <div class="title">
-                            <p>미국의 떠오르는 젊은 사상가, 자기계발 멘토</p>
+                            <p>독자를 압도하는 이야기로 프랑스 천재 작가</p>
                         </div>
                     </div>
 
@@ -2678,7 +2680,7 @@
         let search3;
         search3 = ["감염동물", "장아미", "당신의눈물이입금"];
 
-        for (i = 0; i < search.length; i++) {
+        for (i = 0; i < search3.length; i++) {
 
             $.ajax({
 
@@ -2710,7 +2712,7 @@
 
         //best 책 api
         let search4;
-        search4 = ["아주희미한", "퓨처셀프", "눈사자와", "이상한그림", "네가사라진날", "사랑의기술", "비가오면", "바다가", "아즈카반의죄수2"];
+        search4 = ["아주희미한", "퓨처셀프", "눈사자와", "청년주부", "네가사라진날", "사랑의기술", "비가오면", "바다가", "아즈카반의죄수2"];
 
         for (i = 0; i < search4.length; i++) {
 
@@ -2911,9 +2913,9 @@
         }
 
 
-
+        //week 책 api
         let searc9;
-        search9 = ["도시와그", "달의아이", "천개의파랑", "더플로", "도둑맞은", "마음설계자"];
+        search9 = ["테디베어", "달의아이", "천개의파랑", "어리석은장미", "이웃사냥", "샌더스사건"];
 
         for (i = 0; i < search9.length; i++) {
 
@@ -2927,7 +2929,6 @@
             })
                 .done(function (msg) {
 
-                    // console.log(msg);
 
                     let divs = document.getElementsByClassName('wk_book');
 
@@ -2939,7 +2940,7 @@
         }
 
 
-
+        //trip slide 책 api
         let search10;
         search10 = ["나홀로진짜여행", "국내드라이브", "우리는숲으로간다", "바이블제주", "혼자여행코스", "안녕나는부산이야"];
 
@@ -2955,7 +2956,7 @@
             })
                 .done(function (msg) {
 
-                    // console.log(msg);
+    
 
                     let divs = document.getElementsByClassName('tp_book');
 
@@ -2963,18 +2964,12 @@
                     $(".title>.name").eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
                     $(".title>.writer").eq(i).append("<p>" + msg.documents[0].authors + "</p>");
 
-                    // $("#today>.td_book").eq(i).append("<h4>" + msg.documents[0].authors + "</h4>");
-
-                    // let str = msg.documents[0].contents;
-                    // let str2 = str.substring(0, 25);
-
-                    // $("#today>.td_book").eq(i).append("<p>" + str2 + "</p>");
 
                 });
 
         }
 
-
+        //trip slide 책 2페이지 api
         let search10_2;
         search10_2 = ["트래비", "언택트한국", "1박2일해외"];
 
@@ -2990,7 +2985,6 @@
             })
                 .done(function (msg) {
 
-                    // console.log(msg);
 
                     let divs = document.getElementsByClassName('tp_book2');
 
@@ -2998,12 +2992,6 @@
                     $(".title2>.name").eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
                     $(".title2>.writer").eq(i).append("<p>" + msg.documents[0].authors + "</p>");
 
-                    // $("#today>.td_book").eq(i).append("<h4>" + msg.documents[0].authors + "</h4>");
-
-                    // let str = msg.documents[0].contents;
-                    // let str2 = str.substring(0, 25);
-
-                    // $("#today>.td_book").eq(i).append("<p>" + str2 + "</p>");
 
                 });
 

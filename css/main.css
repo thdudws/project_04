@@ -41,6 +41,7 @@ body {
   bottom: 25px;
   left: 95%;
   transition: 1s;
+  background-color: #fff;
 }
 #wrap .up svg {
   width: 30px;
@@ -293,13 +294,13 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e3 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1694064862262_w6vCucKF.png");
+  background-image: url(//active.ridibooks.com/ridibooks_banner/1662599175090_MjIwODIz.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e3 .tag2 {
-  width: 79px;
+  width: 40px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -311,7 +312,7 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e4 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693893649400_MjMwODI1.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1694588074959_MjMwODMw.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -383,19 +384,20 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e8 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693809778918_MjMwOTAx.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1694600949402_MjMwOTEy.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e8 .tag2 {
-  width: 45px;
+  width: 85px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
   margin: 0px 0px 8px 0px;
 }
 .book_slide .slidewrap .slide .sd.e8 .tag2 p {
+  width: 400px;
   font-size: 10px;
   margin: 2px 4px;
 }
@@ -443,12 +445,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: -1%;
+  top: -2%;
   left: 6%;
   z-index: 1;
 }
 .book_slide .slidewrap .slide .sd .title p {
-  width: 350px;
+  width: 450px;
   background: none;
   font-size: 33px;
   font-weight: bold;
@@ -489,10 +491,10 @@ body {
   box-shadow: inset 0em -10em 75px rgb(135, 106, 183);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg3 {
-  box-shadow: inset 0em -10em 75px rgb(31, 116, 180);
+  box-shadow: inset 0em -10em 75px rgb(39, 39, 103);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg4 {
-  box-shadow: inset 0em -10em 75px rgb(21, 73, 17);
+  box-shadow: inset 0em -10em 75px rgb(82, 62, 203);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg5 {
   box-shadow: inset 0em -10em 75px rgb(92, 67, 139);
@@ -502,6 +504,9 @@ body {
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg7 {
   box-shadow: inset 0em -10em 75px rgb(198, 51, 87);
+}
+.book_slide .slidewrap .slide .sd .bg_op.bg8 {
+  box-shadow: inset 0em -10em 75px rgb(72, 8, 71);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg9 {
   box-shadow: inset 0em -10em 75px rgb(37, 173, 63);
@@ -604,8 +609,9 @@ body {
   margin: 4px 12px;
 }
 #today .prev4 {
-  left: 0%;
-  top: 45%;
+  left: -1%;
+  top: 46%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #today .prev4:hover {
@@ -613,8 +619,8 @@ body {
   opacity: 0.8;
 }
 #today .next4 {
-  right: -0.7%;
-  top: 45%;
+  right: -0.8%;
+  top: 46%;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #today .next4:hover {
@@ -709,6 +715,7 @@ body {
 #now_wrap .prev2 {
   left: -0.9%;
   top: 51%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #now_wrap .prev2:hover {
@@ -968,6 +975,7 @@ body {
 #best_wrap .prev3 {
   left: -1.9%;
   top: 48%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #best_wrap .prev3:hover {
@@ -1144,7 +1152,8 @@ body {
 }
 #new .prev5 {
   left: -0.7%;
-  top: 38%;
+  top: 40%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #new .prev5:hover {
@@ -1153,7 +1162,7 @@ body {
 }
 #new .next5 {
   right: -0.7%;
-  top: 38%;
+  top: 40%;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #new .next5:hover {
@@ -1439,6 +1448,7 @@ body {
 #korean .prev7 {
   left: -1.5%;
   top: 48%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #korean .prev7:hover {
@@ -1633,6 +1643,7 @@ body {
 #trip .prev8 {
   left: -0.5%;
   top: 42%;
+  opacity: 0;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
 }
 #trip .prev8:hover {
