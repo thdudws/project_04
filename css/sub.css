@@ -136,6 +136,7 @@ body {
   width: 57%;
   height: 100%;
   padding: 7px;
+  position: relative;
 }
 #category .ct_top .icons .search input {
   width: 90%;
@@ -149,8 +150,8 @@ body {
 #category .ct_top .icons .search img {
   position: absolute;
   width: 30px;
-  top: 2.1%;
-  right: 43.8%;
+  top: 27%;
+  right: 80%;
 }
 #category .ct_top .icons .icon {
   width: 40%;
@@ -389,7 +390,6 @@ body {
 }
 #intro_wrap #intro #for #art {
   width: 1200px;
-  height: 350px;
   background-color: pink;
 }
 #intro_wrap #intro #for #art .artwrap:hover {
@@ -397,7 +397,6 @@ body {
 }
 #intro_wrap #intro #for #art .artwrap {
   width: 96%;
-  height: 96%;
   margin: 0.6% auto;
   overflow: hidden;
   background-color: #e6e8eb;
@@ -409,21 +408,27 @@ body {
 #intro_wrap #intro #for #art .artwrap .title p {
   color: #808991;
   font-size: 17px;
-  padding: 25px 0 0 0;
+  padding: 55px 0 5px 0;
 }
 #intro_wrap #intro #for #art .artwrap .title h2 {
   color: #56585a;
   font-size: 21px;
+  padding: 0 0 20px 0;
 }
 #intro_wrap #intro #for #art .artwrap .toggle {
   width: 100%;
   position: relative;
 }
-#intro_wrap #intro #for #art .artwrap .toggle img {
+#intro_wrap #intro #for #art .artwrap .toggle .tg {
+  height: 280px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#intro_wrap #intro #for #art .artwrap .toggle .tg img {
   width: 100%;
   padding: 20px 0 0 0;
 }
-#intro_wrap #intro #for #art .artwrap .toggle .p_box {
+#intro_wrap #intro #for #art .artwrap .toggle .tg .p_box {
   width: 100%;
   height: 350px;
   padding: 40px 0 0 0;
@@ -431,31 +436,32 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-#intro_wrap #intro #for #art .artwrap .toggle .p_box p {
+#intro_wrap #intro #for #art .artwrap .toggle .tg .p_box p {
   padding: 5px 0 0 0;
 }
-#intro_wrap #intro #for #art .artwrap .toggle .p_box span {
+#intro_wrap #intro #for #art .artwrap .toggle .tg .p_box span {
   color: #1e9eff;
   font-size: 14px;
   padding: 0 5px;
 }
-#intro_wrap #intro #for #art .artwrap .toggle .p_box button {
+#intro_wrap #intro #for #art .artwrap .toggle .tg .p_box button {
   width: 20px;
   height: 20px;
   background-color: #1e9eff;
   border: none;
   border-radius: 100%;
 }
-#intro_wrap #intro #for #art .artwrap .toggle .p_box button svg {
+#intro_wrap #intro #for #art .artwrap .toggle .tg .p_box button svg {
   width: 10px;
   height: 10px;
+}
+#intro_wrap #intro #for #art .artwrap .toggle .hid {
+  height: 5600px;
+  overflow: visible;
 }
 #intro_wrap #intro #for #art .artwrap .btn1 {
   width: 912px;
   height: 30px;
-  position: absolute;
-  top: 38.7%;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -476,9 +482,11 @@ body {
   width: 10px;
   height: 10px;
 }
+#intro_wrap #intro #for #art .artwrap .btn1 button.rotate {
+  transform: rotate(180deg);
+}
 #intro_wrap #intro #for #review {
   width: 1200px;
-  height: 350px;
   background-color: pink;
 }
 #intro_wrap #intro #for #review .rw_wrap:hover {
@@ -486,9 +494,7 @@ body {
 }
 #intro_wrap #intro #for #review .rw_wrap {
   width: 96%;
-  height: 96%;
   margin: 0.6% auto;
-  overflow: hidden;
   background-color: #e6e8eb;
 }
 #intro_wrap #intro #for #review .rw_wrap .title {
@@ -498,15 +504,16 @@ body {
 #intro_wrap #intro #for #review .rw_wrap .title h2 {
   color: #56585a;
   font-size: 21px;
-  padding: 60px 0 0 0;
+  padding: 60px 0 20px 0;
 }
 #intro_wrap #intro #for #review .rw_wrap .toggle2 {
-  width: 100%;
-  position: relative;
+  width: 97%;
+  overflow: hidden;
+  transition: all 1s;
 }
 #intro_wrap #intro #for #review .rw_wrap .toggle2 .rw_box {
   width: 100%;
-  height: 350px;
+  height: 160px;
   padding: 10px 0 0 0;
   display: flex;
   flex-wrap: wrap;
@@ -534,9 +541,7 @@ body {
 #intro_wrap #intro #for #review .rw_wrap .btn2 {
   width: 912px;
   height: 30px;
-  position: absolute;
   top: 51.8%;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -557,9 +562,16 @@ body {
   width: 10px;
   height: 10px;
 }
+#intro_wrap #intro #for #review .rw_wrap .btn2 button.rotate {
+  transform: rotate(180deg);
+}
+#intro_wrap #intro #for #review .hid2 {
+  height: 620px;
+  overflow: visible;
+}
 #intro_wrap #intro #for .writer {
   width: 1200px;
-  height: 220px;
+  height: 300px;
   background-color: pink;
 }
 #intro_wrap #intro #for .writer .wt_wrap:hover {
@@ -573,20 +585,20 @@ body {
   background-color: #e6e8eb;
 }
 #intro_wrap #intro #for .writer .wt_wrap .title {
-  height: 30%;
+  height: 35%;
   border-bottom: 2px solid #808991;
 }
 #intro_wrap #intro #for .writer .wt_wrap .title h2 {
   color: #56585a;
   font-size: 21px;
-  padding: 35px 0 0 0;
+  padding: 50px 0 0 0;
 }
 #intro_wrap #intro #for .writer .wt_wrap .wt_box .th {
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
 }
 #intro_wrap #intro #for #list {
   width: 1200px;
-  height: 280px;
+  height: 320px;
   background-color: pink;
 }
 #intro_wrap #intro #for #list .ls_wrap:hover {
@@ -606,10 +618,45 @@ body {
 #intro_wrap #intro #for #list .ls_wrap .title h2 {
   color: #56585a;
   font-size: 21px;
-  padding: 35px 0 0 0;
+  padding: 48px 0 0 0;
 }
 #intro_wrap #intro #for #list .ls_wrap .ls_box .ls {
   padding: 20px 0 0 0;
+}
+#intro_wrap #intro #for #card {
+  width: 1200px;
+  height: 880px;
+  background-color: pink;
+}
+#intro_wrap #intro #for #card .card_wrap:hover {
+  cursor: pointer;
+}
+#intro_wrap #intro #for #card .card_wrap {
+  width: 96%;
+  height: 96%;
+  margin: 0.6% auto;
+  overflow: hidden;
+  background-color: #e6e8eb;
+}
+#intro_wrap #intro #for #card .card_wrap .title {
+  height: 13%;
+  border-bottom: 2px solid #808991;
+}
+#intro_wrap #intro #for #card .card_wrap .title h2 {
+  color: #56585a;
+  font-size: 21px;
+  padding: 65px 0 0 0;
+}
+#intro_wrap #intro #for #card .card_wrap .card_book {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 700px;
+  height: 700px;
+  position: relative;
+}
+#intro_wrap #intro #for #card .card_wrap .card_book img {
+  position: absolute;
+  width: 100%;
 }
 #intro_wrap #intro #for #media {
   width: 1200px;
@@ -639,6 +686,391 @@ body {
   padding: 20px 0 0 0;
   width: 912px;
   height: 489px;
+}
+#intro_wrap #intro #for #rating {
+  width: 1200px;
+  height: 1050px;
+  background-color: pink;
+}
+#intro_wrap #intro #for #rating .rt_wrap:hover {
+  cursor: pointer;
+}
+#intro_wrap #intro #for #rating .rt_wrap {
+  width: 96%;
+  height: 96%;
+  margin: 0.6% auto;
+  overflow: hidden;
+  background-color: #e6e8eb;
+}
+#intro_wrap #intro #for #rating .rt_wrap .title {
+  height: 12%;
+  border-bottom: 2px solid #808991;
+}
+#intro_wrap #intro #for #rating .rt_wrap .title h2 {
+  color: #56585a;
+  font-size: 21px;
+  padding: 55px 0 0 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 {
+  width: 150px;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 h1 {
+  padding: 5px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 img {
+  width: 75px;
+  height: 15px;
+  margin: 1% 2%;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 .graph {
+  width: 120px;
+  height: 130px;
+  margin: 1% 2%;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.411);
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 .graph img {
+  width: 90%;
+  height: 90%;
+  margin: 3% 6.5px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star1 p {
+  height: 20px;
+  letter-spacing: 200%;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 {
+  width: 760px;
+  height: 100%;
+  background-color: bisque;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw {
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw h2 {
+  color: #999999;
+  font-size: 20px;
+  height: 30px;
+  margin: 2% 0 0 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .star5 {
+  width: 750px;
+  height: 45px;
+  overflow: hidden;
+  margin: 0 0 1% 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .star5 .st_wrap {
+  width: 100%;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .star5 .st_wrap .starz {
+  width: 750px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .star5 .st_wrap .starz img {
+  width: 45px;
+  margin: 0 1%;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .texting {
+  width: 98%;
+  height: 120px;
+  border: 2px solid #999999;
+  border-radius: 5px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .texting p {
+  padding: 10px 15px;
+  font-size: 17px;
+  color: #56585a;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns {
+  width: 98%;
+  height: 45px;
+  display: flex;
+  margin: 1% 0;
+  justify-content: space-between;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr {
+  width: 170px;
+  height: 35px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 1% 0;
+  padding: 5px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr svg {
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr p {
+  color: #808691;
+  font-weight: bold;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr:hover {
+  cursor: pointer;
+  background-color: rgba(189, 186, 186, 0.5215686275);
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2:hover {
+  cursor: pointer;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 button:hover {
+  cursor: pointer;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 button {
+  width: 90px;
+  height: 35px;
+  background-color: #cccccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 p {
+  color: #363636;
+}
+#intro_wrap #intro #for #rating .rt_wrap .click {
+  width: 80%;
+  height: 300px;
+  border-radius: 5px;
+  text-align: left;
+  display: none;
+  margin: 0 150px;
+  background-color: #e3e6eb;
+}
+#intro_wrap #intro #for #rating .rt_wrap .click h4 {
+  padding: 10px 15px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .click p {
+  font-size: 13.5px;
+  padding: 5px 15px;
+}
+#intro_wrap #intro #for #rating .rt_wrap .none {
+  display: block;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor {
+  width: 100%;
+  height: 500px;
+  background-color: paleturquoise;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .tab {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #a0a3a5;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .tab .tab_1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .tab ul li {
+  float: left;
+  padding: 0 5px;
+  color: #7c8185;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 {
+  width: 140px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #b8babe;
+  background-color: #ffffff;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 img {
+  width: 60px;
+  height: 12px;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 .p_wrap {
+  padding: 5% 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 .p_wrap .id {
+  float: left;
+  padding: 0 5px 0 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 .p_wrap .bt {
+  width: 40px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  background-color: #808691;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_1 p {
+  margin: 2% 0;
+  font-size: 14px;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_2 {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #b8babe;
+  background-color: powderblue;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_2 p {
+  height: 40%;
+  padding: 30px 20px;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .list .list_2 .btnz {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px 0;
+}
+#intro_wrap #intro #for #rating .rt_wrap #custmor .what {
+  color: #808691;
+  padding: 10px 0;
+}
+#intro_wrap #intro #for #slide {
+  width: 950px;
+  height: 425px;
+  position: relative;
+  background-color: #9ab9e9;
+}
+#intro_wrap #intro #for #slide h2 {
+  width: 100%;
+  height: 50px;
+  margin: 1%;
+  padding: 20px 10px;
+}
+#intro_wrap #intro #for #slide pre {
+  position: absolute;
+  display: block;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  padding: 8px 1px;
+  margin: 0px -1px;
+}
+#intro_wrap #intro #for #slide pre img {
+  width: 15px;
+  height: 17px;
+  margin: 4px 12px;
+}
+#intro_wrap #intro #for #slide .prev1 {
+  left: -1.7%;
+  top: 50%;
+  opacity: 0;
+  box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
+}
+#intro_wrap #intro #for #slide .prev1:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#intro_wrap #intro #for #slide .next1 {
+  right: -1.7%;
+  top: 50%;
+  box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
+}
+#intro_wrap #intro #for #slide .next1:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#intro_wrap #intro #for #slide .slidewrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap {
+  width: 1900px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  background-color: #808691;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book {
+  width: 210px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  text-align: left;
+  margin: 0px 20px 0 10px;
+  background-color: #c5b8f5;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book img {
+  width: 180px;
+  height: 70%;
+  margin: 0 auto;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles .tit_h4 {
+  width: 100%;
+  height: 25%;
+  font-weight: 600;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles .writ {
+  width: 100%;
+  height: 25%;
+  font-size: 15px;
+  color: #777777;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles .grade {
+  width: 100%;
+  height: 25%;
+  font-size: 13px;
+  color: #DC3232;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles .grade svg {
+  width: 11px;
+  height: 11px;
+}
+#intro_wrap #intro #for #slide .slidewrap .sd_wrap .sd_book .titles .grade .grade2 {
+  color: #777777;
 }
 #intro_wrap #sticky {
   width: 250px;

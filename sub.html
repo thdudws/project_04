@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>환상서점</title>
+    <title>비가 오면 열리는 상점</title>
 
     <link rel="icon" href="img/t_icon.jpg">
 
@@ -14,6 +14,86 @@
 
     <script src="js/slide.js"></script>
     <script src="js/sub.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <style>
+
+    :root {
+        --swiper-theme-color: #fff !important;
+    }
+        html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 700px;
+        height: 700px;
+        padding: 20px 0 0 0;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+        .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+        box-sizing: content-box;
+      }
+
+      .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+                    width: 100%;
+                    height: var(--swiper-pagination-progressbar-size,4px);
+                    left: 0;
+                    top: 2.8% !important;
+                }
+
+                .swiper-button-next, .swiper-button-prev {
+                    position: absolute;
+                    top: var(--swiper-navigation-top-offset,50%);
+                    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+                    height: var(--swiper-navigation-size);
+                    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+                    z-index: 10;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--swiper-navigation-color,#fff); }
+    </style>
+
 
 </head>
 
@@ -58,7 +138,7 @@
                     <div class="icons">
 
                         <div class="search">
-                            <input type="text">
+                            <input type="search" id="search" name="search">
                             <img src="img/icon.png" alt="">
                         </div>
 
@@ -95,11 +175,11 @@
                     <div class="book_text">
                         <div id="text">
                             <span>소설 > 한국소설, 소설 > 국내 판타지 소설</span>
-                            <h1>환상서점</h1>
-                            <span>잠 못 이루는 밤 되시길 바랍니다</span>
-                            <p class="star"><img src="img/star.png" alt=""> 5점 <span>(73명)</span></p>
-                            <p><b>소서림</b> 저 <br>
-                                <b>해피북스투유</b> 출판
+                            <h1>비가 오면 열리는 상점</h1>
+                            <span>"당신의 불행을 파시겠습니까?"</span>
+                            <p class="star"><img src="img/4.4.png" alt=""> 4.4점 <span>(13명)</span></p>
+                            <p><b>유영광</b> 저 <br>
+                                <b>클레이하우스</b> 출판
                             </p>
                         </div>
 
@@ -114,9 +194,9 @@
                                     <li>판매가</li>
                                 </ul>
                                 <ul class="two">
-                                    <li>15,500</li>
-                                    <li>20%↓ 12,400</li>
-                                    <li style="color: #1e9eff;">12,400</li>
+                                    <li>16,800</li>
+                                    <li>33%↓ 11,400</li>
+                                    <li style="color: #1e9eff;">11,400</li>
                                 </ul>
                             </div>
                         </div>
@@ -274,29 +354,17 @@
                     <div id="art">
                         <div class="artwrap">
                             <div class="title">
-                                <p>환상서점</p>
+                                <p>비가 오면 열리는 상점</p>
                                 <h2>작품 소개</h2>
                             </div>
 
                             <div class="toggle">
                                 <div class="tg">
-                                   <img src="https://misc.ridibooks.com/desc.intro/3433000797" alt="img">
+                                   <img src="https://image.aladin.co.kr/img/img_content/K132833528_01.jpg" alt="img">
 
                                 <div class="p_box">
                                     <p></p>
 
-                                    <span class="">접기</span><button><svg width="64px" height="64px" viewBox="0 0 1024 1024"
-                                            class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff"
-                                            stroke="#fff">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    d="M903.232 768l56.768-50.432L512 256l-448 461.568 56.768 50.432L512 364.928z"
-                                                    fill="#fff"></path>
-                                            </g>
-                                        </svg></button>
                                 </div> 
                                 </div>
                                 
@@ -333,18 +401,6 @@
                                 <div class="rw_box">
                                     <p></p>
 
-                                    <span class="">접기</span><button><svg width="64px" height="64px" viewBox="0 0 1024 1024"
-                                            class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff"
-                                            stroke="#fff">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                    d="M903.232 768l56.768-50.432L512 256l-448 461.568 56.768 50.432L512 364.928z"
-                                                    fill="#fff"></path>
-                                            </g>
-                                        </svg></button>
                                 </div>
 
                             </div>
@@ -398,6 +454,55 @@
                     </div>
 
 
+                    <div id="card">
+                    
+                        <div class="card_wrap">
+                    
+                            <div class="title">
+                                <h2>카드로 보는 책</h2>
+                            </div>
+                    
+                            <div class="swiper mySwiper">
+                    
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"> <img
+                                            src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img
+                                            src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t7.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t8.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t9.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://image.aladin.co.kr/product/31867/71/cardview/S042834571_t10.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            pagination: {
+                                el: ".swiper-pagination",
+                                type: "progressbar"
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev"
+                            }
+                        });
+                    </script>
+
+
                     <div id="media">
 
                         <div class="md_wrap">
@@ -407,9 +512,288 @@
 
                             <div class="play">
                                
-                                <iframe width="912" height="480" src="https://www.youtube.com/embed/qNFO6NRl8RU" title="베스트셀러 ㅣ 환상서점 ㅣ 오디오북 ㅣ 낭독" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="912" height="480" src="https://www.youtube.com/embed/dB332SHIYos" title="출간도 되기 전에 해외 6개국 판권 수출된 소설이 있다고? 해리포터와 지브리가 만났다!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                
                             </div>
                             
+                        </div>
+                    </div>
+
+
+                    <div id="rating">
+
+                        <div class="rt_wrap">
+
+                            <div class="title">
+                                <h2>리뷰</h2>
+                            </div>
+
+                            <div class="stars">
+                                <div class="star1">
+                                    <h5 style="color: #808991;">구매자 별점</h5>
+                                    <h1>4.4</h1>
+                                    <img src="img/4.4.png" alt="">
+                                    <div class="graph">
+                                        <img src="img/graph.png" alt="">
+                                    </div>
+                                    <p style="color: #808991;">13명이 평가함</p>
+                                </div>
+
+                                <!-- https://static.ridicdn.net/books-backend/p/4788b2/books/dist/images/icon_star@2x.png -->
+                                <div class="star2">
+                                    <div class="revw">
+                                        <h2>이 책을 평가해주세요!</h2>
+                                        <div class="star5">
+                                            <div class="st_wrap">
+                                                <div class="starz">
+                                                    <img src="img/star2.png" alt="">
+                                                    <img src="img/star2.png" alt="">
+                                                    <img src="img/star2.png" alt="">
+                                                    <img src="img/star2.png" alt="">
+                                                    <img src="img/star2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="texting">
+                                            <p>리뷰 작성 시 광고 및 욕설, 비속어나 타인을 비방하는 문구를 사용하시면 비공개될 수 있습니다.</p>
+                                        </div>
+                                        <div class="btns">
+                                            <button class="wr none"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Warning / Triangle_Warning"> <path id="Vector" d="M12 9.00006V13.0001M4.37891 15.1999C3.46947 16.775 3.01489 17.5629 3.08281 18.2092C3.14206 18.7729 3.43792 19.2851 3.89648 19.6182C4.42204 20.0001 5.3309 20.0001 7.14853 20.0001H16.8515C18.6691 20.0001 19.5778 20.0001 20.1034 19.6182C20.5619 19.2851 20.8579 18.7729 20.9172 18.2092C20.9851 17.5629 20.5307 16.775 19.6212 15.1999L14.7715 6.79986C13.8621 5.22468 13.4071 4.43722 12.8135 4.17291C12.2957 3.94236 11.704 3.94236 11.1862 4.17291C10.5928 4.43711 10.1381 5.22458 9.22946 6.79845L4.37891 15.1999ZM12.0508 16.0001V16.1001L11.9502 16.1003V16.0001H12.0508Z" stroke="#808691" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+                                                <p  class="bk">리뷰 작성시 유의사항</p></button>
+                                            
+                                            <div class="wr2">
+                                                <input type="checkbox" name="check" id="check"> 
+                                                <p>스포일러가 있습니다.</p>
+                                                <button>리뷰 남기기</button>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="click">
+                                <p></p>
+                            </div>
+
+                            <div id="custmor">
+                                <div class="tab">
+                                    <ul class="tab_1">
+                                        <li style="color: #2c2c2c;">구매자 3</li>
+                                        <li>전체 5</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li style="color: #2c2c2c;">최신순 </li>
+                                        <li> | </li>
+                                        <li> 공감순</li>
+                                        <li> | </li>
+                                        <li> 별점 높은순</li>
+                                        <li> | </li>
+                                        <li>별점 낮은순</li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <div class="list_1">
+                                        <img src="img/star.png" alt="">
+                                       
+                                        <div class="p_wrap">
+                                             <p class="id">lov***</p><button class="bt">구매자</button>
+                                        </div>
+                                           
+
+                                        <p style="color: #808991;">2023.08.11</p>
+                                        <p style="color: #808991; font-weight: 600; ">신고 · 차단</p>
+                                    </div>
+                                    <div class="list_2">
+                                        <p>즐겁게 상상하며 잘 읽었습니다 ^^</p>
+                                        <div class="btnz">
+                                            <img src="img/tumb.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list">
+                                    <div class="list_1">
+                                        <img src="img/star.png" alt="">
+                                       
+                                        <div class="p_wrap">
+                                             <p class="id">lov***</p><button class="bt">구매자</button>
+                                        </div>
+                                           
+
+                                        <p style="color: #808991;">2023.08.11</p>
+                                        <p style="color: #808991; font-weight: 600; ">신고 · 차단</p>
+                                    </div>
+                                    <div class="list_2">
+                                        <p>즐겁게 상상하며 잘 읽었습니다 ^^</p>
+                                        <div class="btnz">
+                                            <img src="img/tumb.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list">
+                                    <div class="list_1">
+                                        <img src="img/star.png" alt="">
+                                       
+                                        <div class="p_wrap">
+                                             <p class="id">lov***</p><button class="bt">구매자</button>
+                                        </div>
+                                           
+
+                                        <p style="color: #808991;">2023.08.11</p>
+                                        <p style="color: #808991; font-weight: 600; ">신고 · 차단</p>
+                                    </div>
+                                    <div class="list_2">
+                                        <p>즐겁게 상상하며 잘 읽었습니다 ^^</p>
+                                        <div class="btnz">
+                                            <img src="img/tumb.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="what">구매자 표시 기준은 무엇인가요? ∨</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="slide">
+
+                        <h2>새로 나온 작품</h2>
+
+                        <pre class="prev1"><img src="img/arrow_left.png" alt=""></pre>
+                        <pre class="next1"><img src="img/arrow_right.png" alt=""></pre>
+            
+
+                        <div class="slidewrap">
+                            
+                            <div class="sd_wrap">
+
+                                <div class="sd_book">
+                                    
+                                    <div class="titles">
+                                        
+                                        <div class="tit_h4">
+                                        </div>
+                                        <div class="writ">
+                                        </div>
+                                        <p class="grade">
+                                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px"
+                                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                                fill="#DC3232" stroke="#DC3232">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path fill="#DC3232"
+                                                        d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            4.8
+                                            <span class="grade2">
+                                                0
+                                            </span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="sd_book">
+                                    
+                                    <div class="titles">
+                                        <div class="tit_h4">
+                                        </div>
+                                        <div class="writ">
+                                        </div>
+                                        <p class="grade">
+                                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px"
+                                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                                fill="#DC3232" stroke="#DC3232">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path fill="#DC3232"
+                                                        d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            4.8
+                                            <span class="grade2">
+                                                0
+                                            </span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="sd_book">
+                                    
+                                    <div class="titles">
+                                        <div class="tit_h4">
+                                        </div>
+                                        <div class="writ">
+                                        </div>
+                                        <p class="grade">
+                                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px"
+                                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                                fill="#DC3232" stroke="#DC3232">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path fill="#DC3232"
+                                                        d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            4.8
+                                            <span class="grade2">
+                                                0
+                                            </span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="sd_book">
+                                    
+                                    <div class="titles">
+                                        <div class="tit_h4">
+                                        </div>
+                                        <div class="writ">
+                                        </div>
+                                        <p class="grade">
+                                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px"
+                                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                                fill="#DC3232" stroke="#DC3232">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path fill="#DC3232"
+                                                        d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            4.8
+                                            <span class="grade2">
+                                                0
+                                            </span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
@@ -603,7 +987,7 @@
     <script>
 
         let search;
-        search = ["환상서점"];
+        search = ["비가오면"];
 
         for (i = 0; i < search.length; i++) {
 
@@ -624,6 +1008,41 @@
                     let str = msg.documents[0].contents;
 
                 });
+        }
+
+
+        let search2;
+        search2 = ["베태랑의몸", "부자할머니", "그럴수있어", "전건우", "프로젝트", "비스킷"];
+
+        for (i = 0; i < search2.length; i++) {
+
+            $.ajax({
+
+                method: "GET",
+                url: "https://dapi.kakao.com/v3/search/book?target=title",
+                data: { query: search2[i], size: 1 },
+                async: false,
+                headers: { Authorization: "KakaoAK 0030f17a3fc5cec1499493f59045dd2b" }
+            })
+                .done(function (msg) {
+
+                    // console.log(msg);
+
+                    let divs = document.getElementsByClassName('sd_book');
+
+                    $(".sd_wrap>.sd_book").eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+                    $(".titles>.tit_h4").eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
+                    $(".titles>.writ").eq(i).append("<p>" + msg.documents[0].authors + "</p>");
+
+                    // $("#today>.td_book").eq(i).append("<h4>" + msg.documents[0].authors + "</h4>");
+
+                    // let str = msg.documents[0].contents;
+                    // let str2 = str.substring(0, 25);
+
+                    // $("#today>.td_book").eq(i).append("<p>" + str2 + "</p>");
+
+                });
+
         }
 
 
