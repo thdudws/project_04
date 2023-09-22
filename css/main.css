@@ -403,13 +403,13 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e9 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693372622852_MjMwODI5.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1695014993254_MjMwOTE0.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e9 .tag2 {
-  width: 75px;
+  width: 35px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -509,7 +509,7 @@ body {
   box-shadow: inset 0em -10em 75px rgb(72, 8, 71);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg9 {
-  box-shadow: inset 0em -10em 75px rgb(37, 173, 63);
+  box-shadow: inset 0em -10em 75px rgb(71, 42, 155);
 }
 .book_slide .slidewrap span {
   position: absolute;
@@ -798,7 +798,7 @@ body {
   font-size: 13px;
   color: #DC3232;
 }
-#now_wrap #slidewrap #now_slide .now .now_bk .tit .star svg {
+#now_wrap #slidewrap #now_slide .now .now_bk .tit .star img {
   width: 11px;
   height: 11px;
 }
@@ -854,7 +854,7 @@ body {
   color: #DC3232;
   background-color: #fff;
 }
-#now_wrap #slidewrap #now_slide .now .now_bk2 .tit2 .star_1 svg {
+#now_wrap #slidewrap #now_slide .now .now_bk2 .tit2 .star_1 img {
   width: 11px;
   height: 11px;
 }
@@ -1058,7 +1058,7 @@ body {
   font-size: 13px;
   color: #DC3232;
 }
-#best_wrap #best_slidewrap #best_slide .best .best_bk .tit3 .star3 svg {
+#best_wrap #best_slidewrap #best_slide .best .best_bk .tit3 .star3 img {
   width: 11px;
   height: 11px;
 }
@@ -1111,7 +1111,7 @@ body {
   font-size: 13px;
   color: #DC3232;
 }
-#best_wrap #best_slidewrap #best_slide .best .best_bk2 .tit4 .star3_1 svg {
+#best_wrap #best_slidewrap #best_slide .best .best_bk2 .tit4 .star3_1 img {
   width: 11px;
   height: 11px;
 }
@@ -1221,7 +1221,7 @@ body {
   font-size: 13px;
   color: #DC3232;
 }
-#new #nw_slidewrap #nw_slide .nw_book .titles .grade svg {
+#new #nw_slidewrap #nw_slide .nw_book .titles .grade img {
   width: 11px;
   height: 11px;
 }
@@ -1270,7 +1270,7 @@ body {
   font-size: 13px;
   color: #DC3232;
 }
-#new #nw_slidewrap #nw_slide .nw_book2 .titles2 .grade svg {
+#new #nw_slidewrap #nw_slide .nw_book2 .titles2 .grade img {
   width: 11px;
   height: 11px;
 }

@@ -46,7 +46,7 @@
     $('.next').click(function(){
         slide()
     });
-    setInterval(slide,6000);
+    // setInterval(slide,6000);
 
 
     //today_slide
