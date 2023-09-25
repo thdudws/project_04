@@ -233,6 +233,10 @@
                height: 78%;
                margin: 50px ;
             }
+
+            button:hover {
+                cursor: pointer;
+            }
         }
    
 }
@@ -270,6 +274,10 @@
                         width: 200px;
                         margin: 0 18px;
                     }
+                }
+
+                .book_img img:hover {
+                    cursor: zoom-in;
                 }
     
                 .book_text {
@@ -494,6 +502,9 @@
                         }
                         .t2 {
                             width: 70%;
+                            & img {
+                                margin: 0 -7px;
+                            }
                         }
 
                     }
@@ -1752,7 +1763,7 @@
 
             .pop {
                 width: 100%;
-                height: 260px;
+                height: 270px;
                 margin: 8% 0; 
                 display: flex;
                 flex-direction: column;
@@ -1789,7 +1800,7 @@
                         align-items: center;
                         & img {
                             width: 77%;
-                            height: 80%;
+                            height: 85%;
                         }
                     }
                 }
@@ -1798,38 +1809,6 @@
                     background-color: rgb(215, 206, 247);
                 }
 
-                // .popup2 {
-                //     width: 98%;
-                //     height: 48%;
-                //     border-radius: 5px;
-                //     background-color: #808991;
-
-                    
-                //     .capi {
-                //         width: 50%;
-                //         height: 100%;
-                //         text-align: center;
-                //         display: flex;
-                //         align-items: center;
-                //         justify-content: center;
-                        
-                //         p {
-                //             line-height: 150%;
-                //         }
-                //     }
-
-                //     .sign {
-                //         width: 50%;
-                //         height: 100%;
-                //         display: flex;
-                //         justify-content: center;
-                //         align-items: center;
-                //         & img {
-                //             width: 80%;
-                //             height: 82%;
-                //         }
-                //     }
-                // }
             }
         }
     }
