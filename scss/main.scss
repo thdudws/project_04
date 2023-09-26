@@ -233,12 +233,10 @@
     width: 1200px;
     height: 470px;
     margin: 0 auto;
-    // background-color: aliceblue;
 
     .cate {
         width: 100%;
         height: 55px;
-        // background-color: antiquewhite;
 
         button {
             width: auto;
@@ -256,7 +254,6 @@
                 size: 16px;
                 weight: bold;
             }
-
         }
 
         .two {
@@ -273,25 +270,22 @@
         .slide {
             width: 1200px;
             height: 415px;
-            // background-color: #c5b8f5;
             overflow: hidden;
             padding: 5px;
             display: flex;
             justify-content: flex-end;
 
             .sd {
-                // width: 1200px;
                 height: 100%;
                 border-radius: 5px;
                 margin: 0 5px;
-                // transition: 2s;
                 color: #fff;
                 background-color: $ridiPurple;
                 position: relative;
+                overflow: hidden;
 
                 &:nth-of-type(2) {
                     flex-basis: 48px;
-
                 }
 
                 &:nth-of-type(3) {
@@ -335,7 +329,7 @@
 
                 &.e1 {
                     flex-grow: 1;
-                    background-image: url("//active.ridibooks.com/ridibooks_banner/1693545718269_MjMwODMw.jpg");
+                    background-image: url(//active.ridibooks.com/ridibooks_banner/1695627307042_MjMwOTE5.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -351,12 +345,12 @@
 
                 &.e3 {
                     flex-grow: 0;
-                    background-image: url(//active.ridibooks.com/ridibooks_banner/1662599175090_MjIwODIz.jpg);
+                    background-image: url("//active.ridibooks.com/ridibooks_banner/1693464249779_MjMwODI5.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
                     .tag2 {
-                        width: 40px;
+                        width: 58px;
                         height: 20px;
                         border: 1px solid #fff;
                         border-radius: 2px;
@@ -371,12 +365,12 @@
 
                 &.e4 {
                     flex-grow: 0;
-                    background-image: url("//active.ridibooks.com/ridibooks_banner/1694588074959_MjMwODMw.jpg");
+                    background-image: url("//active.ridibooks.com/ridibooks_banner/1695093131713_MjMwNzA0.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
                     .tag2 {
-                        width: 79px;
+                        width: 77px;
                         height: 20px;
                         border: 1px solid #fff;
                         border-radius: 2px;
@@ -411,12 +405,12 @@
 
                 &.e6 {
                     flex-grow: 0;
-                    background-image: url("//active.ridibooks.com/ridibooks_banner/1693806621450_MjMwOTA0.jpg");
+                    background-image:url("//active.ridibooks.com/ridibooks_banner/1695608319047_MjMwOTI1.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
                     .tag2 {
-                        width: 79px;
+                        width: 82px;
                         height: 20px;
                         border: 1px solid #fff;
                         border-radius: 2px;
@@ -500,6 +494,7 @@
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+
                     .tag {
                         width: 35px;
                         height: 20px;
@@ -573,32 +568,32 @@
                     position: absolute;
                     border-radius: 5px;
                     // background-color: #3a3a3aa1;
-                    top: 45%;
-                    box-shadow: inset 0em -9em 75px rgba(41, 39, 39, 0.623);
+                    top: 50%;
+                    box-shadow: inset 0em -9em 75px rgba(15, 14, 15, 1);
 
                     &.bg2 {
-                        box-shadow: inset 0em -10em 75px rgba(135, 106, 183, 1);
+                        box-shadow: inset 0em -9em 75px rgba(135, 106, 183, 1);
                     }
                     &.bg3 {
-                        box-shadow: inset 0em -10em 75px rgba(39, 39, 103, 1);
+                        box-shadow: inset 0em -9em 75px rgba(2, 27, 110, 1);
                     }
                     &.bg4 {
-                        box-shadow: inset 0em -10em 75px rgba(82, 62, 203, 1);
+                        box-shadow: inset 0em -9em 75px rgba(86, 26, 134, 1);
                     }
                     &.bg5{
-                        box-shadow: inset 0em -10em 75px rgba(92, 67, 139, 1);
+                        box-shadow: inset 0em -9em 75px rgba(92, 67, 139, 1);
                     }
                     &.bg6 {
-                        box-shadow: inset 0em -10em 75px rgb(108, 74, 163);
+                        box-shadow: inset 0em -8em 75px rgb(226, 85, 119, 1);
                     }
                     &.bg7 {
-                        box-shadow: inset 0em -10em 75px rgb(198, 51, 87);
+                        box-shadow: inset 0em -9em 75px rgb(198, 51, 87);
                     }
                     &.bg8 {
-                        box-shadow: inset 0em -10em 75px rgb(72, 8, 71);
+                        box-shadow: inset 0em -9em 75px rgb(72, 8, 71);
                     }
                     &.bg9 {
-                        box-shadow: inset 0em -10em 75px rgb(71, 42, 155);
+                        box-shadow: inset 0em -9em 75px rgb(71, 42, 155);
                     }
                 }
             }
@@ -690,6 +685,11 @@
 
     }
 
+    .dots:hover {
+        cursor: pointer;
+    }
+
+
 }
 
 #today {
@@ -701,7 +701,6 @@
     flex-wrap: nowrap;
     flex-direction: column;
     position: relative;
-    // background-color: aliceblue;
 
     h2 {
         width: 100%;
@@ -726,7 +725,6 @@
             height: 17px;
             margin: 4px 12px;
         }
-
     }
 
     .prev4 {
@@ -1632,20 +1630,17 @@
         height: 40px;
         padding: 8px 1px;
         margin: 0px -1px;
-        opacity: 0;
 
         & img {
             width: 15px;
             height: 17px;
             margin: 4px 12px;
         }
-
     }
 
     .prev6 {
         left: 20%;
         top: 67%;
-        // box-shadow: -1px 0 .7em rgba(223, 223, 223, 0.863);
     }
 
     .prev6:hover {
@@ -1656,7 +1651,6 @@
     .next6 {
         right: 20%;
         top: 67%;
-        // box-shadow: -1px 0 .7em rgba(223, 223, 223, 0.863);
     }
 
     .next6:hover {
@@ -1667,7 +1661,6 @@
     .back1 {
         width: 100%;
         height: 100px;
-        // display: none;
          background-color: #45aee7;
 
          .img_bn {
@@ -1676,7 +1669,6 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            // background-color: #caf1ed;
 
             .ppl {
                 width: 100px;
@@ -1693,7 +1685,6 @@
             .story {
                 width: 700px;
                 height: 100%;
-                // background-color: #269bda;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1712,7 +1703,6 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            // background-color: #caf1ed;
 
             .ppl {
                 width: 100px;
@@ -1729,7 +1719,6 @@
             .story {
                 width: 700px;
                 height: 100%;
-                // background-color: #269bda;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1749,7 +1738,6 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            // background-color: #caf1ed;
 
             .ppl {
                 width: 100px;
@@ -1766,7 +1754,6 @@
             .story {
                 width: 700px;
                 height: 100%;
-                // background-color: #269bda;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1782,7 +1769,6 @@
     height: 580px;
     margin: 0 auto;
     position: relative;
-    // background-color: #caf1ed;
 
     h2 {
         margin: 3% 1%;
@@ -1802,14 +1788,12 @@
         padding: 8px 1px;
         margin: 0px -1px;
         z-index: 1;
-        // opacity: 0;
 
         & img {
             width: 15px;
             height: 17px;
             margin: 4px 12px;
         }
-
     }
 
     .prev7 {

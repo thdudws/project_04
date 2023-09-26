@@ -243,6 +243,7 @@ body {
   color: #fff;
   background-color: #876ab8;
   position: relative;
+  overflow: hidden;
 }
 .book_slide .slidewrap .slide .sd:nth-of-type(2) {
   flex-basis: 48px;
@@ -280,7 +281,7 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e1 {
   flex-grow: 1;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693545718269_MjMwODMw.jpg");
+  background-image: url(//active.ridibooks.com/ridibooks_banner/1695627307042_MjMwOTE5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,13 +295,13 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e3 {
   flex-grow: 0;
-  background-image: url(//active.ridibooks.com/ridibooks_banner/1662599175090_MjIwODIz.jpg);
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1693464249779_MjMwODI5.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e3 .tag2 {
-  width: 40px;
+  width: 58px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -312,13 +313,13 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e4 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1694588074959_MjMwODMw.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1695093131713_MjMwNzA0.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e4 .tag2 {
-  width: 79px;
+  width: 77px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -348,13 +349,13 @@ body {
 }
 .book_slide .slidewrap .slide .sd.e6 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693806621450_MjMwOTA0.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1695608319047_MjMwOTI1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e6 .tag2 {
-  width: 79px;
+  width: 82px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -484,32 +485,32 @@ body {
   height: 55%;
   position: absolute;
   border-radius: 5px;
-  top: 45%;
-  box-shadow: inset 0em -9em 75px rgba(41, 39, 39, 0.623);
+  top: 50%;
+  box-shadow: inset 0em -9em 75px rgb(15, 14, 15);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg2 {
-  box-shadow: inset 0em -10em 75px rgb(135, 106, 183);
+  box-shadow: inset 0em -9em 75px rgb(135, 106, 183);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg3 {
-  box-shadow: inset 0em -10em 75px rgb(39, 39, 103);
+  box-shadow: inset 0em -9em 75px rgb(2, 27, 110);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg4 {
-  box-shadow: inset 0em -10em 75px rgb(82, 62, 203);
+  box-shadow: inset 0em -9em 75px rgb(86, 26, 134);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg5 {
-  box-shadow: inset 0em -10em 75px rgb(92, 67, 139);
+  box-shadow: inset 0em -9em 75px rgb(92, 67, 139);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg6 {
-  box-shadow: inset 0em -10em 75px rgb(108, 74, 163);
+  box-shadow: inset 0em -8em 75px rgb(226, 85, 119);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg7 {
-  box-shadow: inset 0em -10em 75px rgb(198, 51, 87);
+  box-shadow: inset 0em -9em 75px rgb(198, 51, 87);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg8 {
-  box-shadow: inset 0em -10em 75px rgb(72, 8, 71);
+  box-shadow: inset 0em -9em 75px rgb(72, 8, 71);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg9 {
-  box-shadow: inset 0em -10em 75px rgb(71, 42, 155);
+  box-shadow: inset 0em -9em 75px rgb(71, 42, 155);
 }
 .book_slide .slidewrap span {
   position: absolute;
@@ -574,6 +575,9 @@ body {
 }
 .dot .dots p {
   margin: 3%;
+}
+.dot .dots:hover {
+  cursor: pointer;
 }
 
 #today {
@@ -1297,7 +1301,6 @@ body {
   height: 40px;
   padding: 8px 1px;
   margin: 0px -1px;
-  opacity: 0;
 }
 #banner pre img {
   width: 15px;

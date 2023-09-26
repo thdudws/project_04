@@ -31,10 +31,9 @@ $(function(){
             }else {
                 $('.btn1 span').text('펼쳐보기');
             }
-
-            $('.btn1 button').toggleClass('rotate')
-            
+            $('.btn1 button').toggleClass('rotate')      
         });
+
 
         //펼쳐보기2
         $('.rw_wrap').on("click", function(){
@@ -44,9 +43,7 @@ $(function(){
             }else {
                 $('.btn2 span').text('펼쳐보기');
             }
-
             $('.btn2 button').toggleClass('rotate')
-            
         });
 
 
@@ -95,6 +92,7 @@ $(function(){
         });
 
 
+        //책 표지 보기
         $(".book_img img").click(function(){
             $(".up").hide();
             $(".extend").show();
@@ -109,11 +107,6 @@ $(function(){
    
         });
 
-
-
-    
-    
-
-   
+ 
 });
 

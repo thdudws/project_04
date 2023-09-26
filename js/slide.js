@@ -3,16 +3,13 @@
 
     //메인 슬라이드 이전 버튼 클릭 시
     $('.prev').click(function () {
-
         $('.slide>.sd:last').prependTo('.slide').css({"display":"block",'flex-grow':'0','flex-basis':'0px'},500);
         $('.slide>.sd:first').stop().animate({'flex-grow':'1','flex-basis':'0'},"linear");
         $('.sd').eq(1).animate({'flex-grow':'0','flex-basis':'48px'},"slow");
         $('.sd').eq(2).animate({'flex-grow':'0','flex-basis':'48px'},"slow");  
-        $('.sd').eq(3).animate({'flex-grow':'0','flex-basis':'0'},"slow", function(){ 
-          
+        $('.sd').eq(3).animate({'flex-grow':'0','flex-basis':'0'},"slow", function(){       
             $('.sd').eq(3).css({ 'display': 'none' },"slow");  
             $('.sd').eq(4).animate({'flex-grow':'0','flex-basis':'0'},"slow"); 
-
         });      
 
         ////메인 타이틀 박스 fade in
@@ -23,13 +20,10 @@
 
      //메인 슬라이드 다음 버튼 클릭 시
      function slide() {
-        //  console.log('sd')
-
          $('.slide>.sd:first').stop().animate({ 'flex-grow': '0', 'flex-basis': '0' }, 500);
          $('.sd').eq(3).css("display", "block").stop().animate({ 'flex-basis': '48px' }, 500);
          $('.slide>.sd').eq(1).stop().animate({ 'flex-grow': '1', 'flex-basis': '0' }, 500, function () {
              $('.slide>.sd:first').appendTo('.slide');
-
              $('.sd').eq(2).stop().animate({ 'flex-grow': '0', 'flex-basis': '48px' });
              $('.sd').eq(-1).css({ 'display': 'none' });
 
@@ -39,9 +33,7 @@
              $('.bg_op>.title').eq(2).css("opacity","0").fadeOut(400);
              $('.bg_op>.title').eq(3).css("opacity","0").fadeOut(400);
          });
-
-     }
-    
+     }  
      //메인 슬라이드 setInterval
     $('.next').click(function(){
         slide()
@@ -131,6 +123,15 @@
         $('.fade').eq(click).fadeIn().siblings('.fade').hide();
     });
 
+    //banner button
+    $('#banner').mouseover(function(){
+        $('.prev6').css('opacity','1');
+        $('.next6').css('opacity','1')
+    }).mouseout(function(){
+        $('.prev6').css('opacity','0');
+        $('.next6').css('opacity','0');
+    });
+
 
     //korean slide
     $('.next7').click(function(){
@@ -162,19 +163,6 @@
         });
     });
 
-});
-
-
-//banner button
-$(function(){
-    $('#banner').mouseover(function(){
-        $('.prev6').css('opacity','1');
-        $('.next6').css('opacity','1')
-    }).mouseout(function(){
-        $('.prev6').css('opacity','0');
-        $('.next6').css('opacity','0');
-    });
-   
 });
 
 

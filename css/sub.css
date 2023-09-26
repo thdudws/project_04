@@ -607,7 +607,7 @@ body {
   transform: rotate(180deg);
 }
 #intro_wrap #intro #for #review .hid2 {
-  height: 620px;
+  height: 670px;
   overflow: visible;
 }
 #intro_wrap #intro #for .writer {
@@ -868,6 +868,7 @@ body {
 }
 #intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 #intro_wrap #intro #for #rating .rt_wrap .stars .star2 .revw .btns .wr2 {
   width: 250px;
@@ -1021,7 +1022,7 @@ body {
   margin: 4px 12px;
 }
 #intro_wrap #intro #for #slide .prev1 {
-  left: -0.4%;
+  left: -0.6%;
   top: 47%;
   opacity: 0;
   z-index: 1;
@@ -1032,7 +1033,7 @@ body {
   opacity: 0.8;
 }
 #intro_wrap #intro #for #slide .next1 {
-  right: -0.4%;
+  right: 0.8%;
   top: 47%;
   z-index: 1;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
@@ -1188,7 +1189,7 @@ body {
   margin: 4px 12px;
 }
 #intro_wrap #intro #for #slides .prev2 {
-  left: -0.4%;
+  left: -0.6%;
   top: 47%;
   opacity: 0;
   z-index: 1;
@@ -1199,7 +1200,7 @@ body {
   opacity: 0.8;
 }
 #intro_wrap #intro #for #slides .next2 {
-  right: -0.4%;
+  right: 0.8%;
   top: 47%;
   z-index: 1;
   box-shadow: -1px 0 0.7em rgba(223, 223, 223, 0.863);
