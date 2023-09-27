@@ -52,12 +52,43 @@ $(function(){
             $('.click').toggleClass('none');
         });
 
-        $('.starz').mouseover(function(){
-            $('.starz>img').css('transform','translateY(-45px)')
-        });
+        $('.starz>img').mouseover(function(){
+            $(this).add($(this).prevAll()).css('transform','translateY(-45px)');
+        })
+
+        // $('.hover1').mouseover(function(){    
+        //     $('.starz>img').eq(0).css('transform','translateY(-45px)');
+        // });
+
+        // $('.hover2').mouseover(function(){    
+        //     $('.starz>img').eq(0).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(1).css('transform','translateY(-45px)');
+        // });
+
+        // $('.hover3').mouseover(function(){    
+        //     $('.starz>img').eq(0).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(1).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(2).css('transform','translateY(-45px)');
+        // });
+
+        // $('.hover4').mouseover(function(){    
+        //     $('.starz>img').eq(0).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(1).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(2).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(3).css('transform','translateY(-45px)');
+        // });
+
+        // $('.hover5').mouseover(function(){    
+        //     $('.starz>img').eq(0).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(1).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(2).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(3).css('transform','translateY(-45px)');
+        //     $('.starz>img').eq(4).css('transform','translateY(-45px)');
+        // });
+
 
         $('.starz').mouseout(function(){
-            $('.starz>img').css('transform','translateY(0px)')
+            $('.starz>img').css('transform','translateY(0px)');
         });
 
 

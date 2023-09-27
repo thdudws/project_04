@@ -490,7 +490,7 @@
 
                 &.e10 {
                     flex-grow: 0;
-                    background-image: url(//active.ridibooks.com/ridibooks_banner/1694153604743_MjMwODE4.jpg);
+                    background-image: url("//active.ridibooks.com/ridibooks_banner/1695371132579_w6vCucKF.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -594,6 +594,9 @@
                     }
                     &.bg9 {
                         box-shadow: inset 0em -9em 75px rgb(71, 42, 155);
+                    }
+                    &.bg10 {
+                        box-shadow: inset 0em -9em 75px rgb(111, 57, 172);
                     }
                 }
             }
