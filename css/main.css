@@ -286,22 +286,46 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.book_slide .slidewrap .slide .sd.e1 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e1 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e2 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693467066081_MjMwODIz.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1698131486852_MjMxMDIz.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.book_slide .slidewrap .slide .sd.e2 .tag2 {
+  width: 38px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin: 0px 0px 8px 0px;
+}
+.book_slide .slidewrap .slide .sd.e2 .tag2 p {
+  width: 400px;
+  font-size: 10px;
+  margin: 2px 4px;
+}
+.book_slide .slidewrap .slide .sd.e2 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e2 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e3 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693464249779_MjMwODI5.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1700189708895_MjMxMTE3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e3 .tag2 {
-  width: 58px;
+  width: 80px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -310,6 +334,12 @@ body {
 .book_slide .slidewrap .slide .sd.e3 .tag2 p {
   font-size: 10px;
   margin: 2px 4px;
+}
+.book_slide .slidewrap .slide .sd.e3 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e3 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
 }
 .book_slide .slidewrap .slide .sd.e4 {
   flex-grow: 0;
@@ -329,6 +359,12 @@ body {
   font-size: 10px;
   margin: 2px 4px;
 }
+.book_slide .slidewrap .slide .sd.e4 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e4 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e5 {
   flex-grow: 0;
   background-image: url("//active.ridibooks.com/ridibooks_banner/1694415781523_MjMwOTEx.jpg");
@@ -337,7 +373,7 @@ body {
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e5 .tag2 {
-  width: 79px;
+  width: 77px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -347,6 +383,12 @@ body {
   font-size: 10px;
   margin: 2px 4px;
 }
+.book_slide .slidewrap .slide .sd.e5 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e5 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e6 {
   flex-grow: 0;
   background-image: url("//active.ridibooks.com/ridibooks_banner/1695608319047_MjMwOTI1.jpg");
@@ -355,7 +397,7 @@ body {
   background-repeat: no-repeat;
 }
 .book_slide .slidewrap .slide .sd.e6 .tag2 {
-  width: 82px;
+  width: 83px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
@@ -365,9 +407,15 @@ body {
   font-size: 10px;
   margin: 2px 4px;
 }
+.book_slide .slidewrap .slide .sd.e6 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e6 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e7 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1693463394870_w6vCucKF.png");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1699518015255_MjMxMTA2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -382,6 +430,12 @@ body {
 .book_slide .slidewrap .slide .sd.e7 .tag2 p {
   font-size: 10px;
   margin: 2px 4px;
+}
+.book_slide .slidewrap .slide .sd.e7 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e7 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
 }
 .book_slide .slidewrap .slide .sd.e8 {
   flex-grow: 0;
@@ -402,6 +456,12 @@ body {
   font-size: 10px;
   margin: 2px 4px;
 }
+.book_slide .slidewrap .slide .sd.e8 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e8 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e9 {
   flex-grow: 0;
   background-image: url("//active.ridibooks.com/ridibooks_banner/1695014993254_MjMwOTE0.jpg");
@@ -420,23 +480,36 @@ body {
   font-size: 10px;
   margin: 2px 4px;
 }
+.book_slide .slidewrap .slide .sd.e9 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e9 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
+}
 .book_slide .slidewrap .slide .sd.e10 {
   flex-grow: 0;
-  background-image: url("//active.ridibooks.com/ridibooks_banner/1695371132579_w6vCucKF.jpg");
+  background-image: url("//active.ridibooks.com/ridibooks_banner/1699441409104_MjMxMTA3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.book_slide .slidewrap .slide .sd.e10 .tag {
-  width: 35px;
+.book_slide .slidewrap .slide .sd.e10 .tag2 {
+  width: 92px;
   height: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
   margin: 0px 0px 8px 0px;
 }
-.book_slide .slidewrap .slide .sd.e10 .tag img {
-  width: 35px;
-  margin: -2px 0 0 0px;
+.book_slide .slidewrap .slide .sd.e10 .tag2 p {
+  width: 400px;
+  font-size: 10px;
+  margin: 2px 4px;
+}
+.book_slide .slidewrap .slide .sd.e10 .num b {
+  color: #b3b3b3;
+}
+.book_slide .slidewrap .slide .sd.e10 h4 {
+  color: rgba(233, 233, 233, 0.9215686275);
 }
 .book_slide .slidewrap .slide .sd .title {
   width: 1064px;
@@ -489,10 +562,10 @@ body {
   box-shadow: inset 0em -9em 75px rgb(15, 14, 15);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg2 {
-  box-shadow: inset 0em -9em 75px rgb(135, 106, 183);
+  box-shadow: inset 0em -9em 75px rgb(2, 27, 110);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg3 {
-  box-shadow: inset 0em -9em 75px rgb(2, 27, 110);
+  box-shadow: inset 0em -9em 75px rgb(23, 112, 191);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg4 {
   box-shadow: inset 0em -9em 75px rgb(86, 26, 134);
@@ -513,7 +586,7 @@ body {
   box-shadow: inset 0em -9em 75px rgb(71, 42, 155);
 }
 .book_slide .slidewrap .slide .sd .bg_op.bg10 {
-  box-shadow: inset 0em -9em 75px rgb(111, 57, 172);
+  box-shadow: inset 0em -8em 75px rgb(42, 119, 212);
 }
 .book_slide .slidewrap span {
   position: absolute;

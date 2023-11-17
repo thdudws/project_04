@@ -34,11 +34,12 @@
              $('.bg_op>.title').eq(3).css("opacity","0").fadeOut(400);
          });
      }  
+
      //메인 슬라이드 setInterval
     $('.next').click(function(){
         slide()
     });
-    setInterval(slide,6000);
+    // setInterval(slide,6000);
 
 
     //today_slide
